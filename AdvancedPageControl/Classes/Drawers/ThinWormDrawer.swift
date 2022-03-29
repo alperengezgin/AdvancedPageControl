@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 public class ThinWormDrawer: AdvancedPageControlDrawerParentWithIndicator, AdvancedPageControlDraw {
+    public func changeColor(_ color: UIColor) {
+        
+    }
+    
     
     public func draw(_ rect: CGRect) {
         drawIndicators(rect)

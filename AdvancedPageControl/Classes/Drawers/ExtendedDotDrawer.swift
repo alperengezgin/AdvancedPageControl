@@ -9,10 +9,15 @@
 import Foundation
 import UIKit
 public class ExtendedDotDrawer: AdvancedPageControlDrawerParentWithIndicator, AdvancedPageControlDraw {
+    public func changeColor(_ color: UIColor) {
+        indicatorColor = color
+    }
+    
     public func draw(_ rect: CGRect) {
         drawIndicators(rect)
         drawCurrentItem(rect)
     }
+    
 
     func drawIndicators(_ rect: CGRect) {
         let step: CGFloat = (space + width)

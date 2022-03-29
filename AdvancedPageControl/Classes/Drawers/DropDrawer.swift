@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 public class DropDrawer: AdvancedPageControlDrawerParentWithIndicator, AdvancedPageControlDraw {
+    public func changeColor(_ color: UIColor) {
+        
+    }
+    
     var dropRatio: CGFloat = -10
 
     public func draw(_ rect: CGRect) {

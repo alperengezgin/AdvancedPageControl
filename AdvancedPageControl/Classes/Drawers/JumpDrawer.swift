@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 public class JumpDrawer: AdvancedPageControlDrawerParentWithIndicator, AdvancedPageControlDraw {
+    public func changeColor(_ color: UIColor) {
+        
+    }
+    
     var jumpRatio: CGFloat = 20
 
     public func draw(_ rect: CGRect) {

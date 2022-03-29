@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 public class ColorBlendDrawer: AdvancedPageControlDrawerParentWithIndicator, AdvancedPageControlDraw {
+    public func changeColor(_ color: UIColor) {
+        
+    }
+    
     var scaleFactor: CGFloat = 8
     
     public func draw(_ rect: CGRect) {

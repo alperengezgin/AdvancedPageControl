@@ -9,6 +9,10 @@ import Foundation
 
 import UIKit
 public class InfiniteDrawer: AdvancedPageControlDrawerParentWithIndicator, AdvancedPageControlDraw {
+    public func changeColor(_ color: UIColor) {
+        
+    }
+    
     let endsDotScale: CGFloat = 0.5
     var centerScale: CGFloat = 0.3
     var visibleDots: Int = 5

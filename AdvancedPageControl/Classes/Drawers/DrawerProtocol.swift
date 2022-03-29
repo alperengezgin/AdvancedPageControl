@@ -14,6 +14,8 @@ public protocol AdvancedPageControlDraw {
 
     var numberOfPages: Int { get set }
     func draw(_ rect: CGRect)
+    
+    func changeColor(_ color: UIColor)
 }
 
 public class AdvancedPageControlDrawerParentWithIndicator: AdvancedPageControlDrawerParent {
@@ -48,6 +50,9 @@ public class AdvancedPageControlDrawerParentWithIndicator: AdvancedPageControlDr
                    borderColor: borderColor,
                    borderWidth: borderWidth)
     }
+    
+    
+
 }
 
 public class AdvancedPageControlDrawerParent {
@@ -85,7 +90,9 @@ public class AdvancedPageControlDrawerParent {
         self.borderColor = borderColor
         self.borderWidth = borderWidth
     }
-
+    
+    
+    
     func getScaleFactor(currentItem: CGFloat, ratio: CGFloat) -> CGFloat {
         let scale = currentItem - floor(currentItem)
         let scaleFactor = (scale > 0.5 ? 0.5 - (scale - 0.5) : scale) * ratio
